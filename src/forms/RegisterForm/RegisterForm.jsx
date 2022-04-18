@@ -26,7 +26,7 @@ function RegisterForm({ handleSubmit }) {
       </Button>
       <div className="social-icons">
         {IconNames.map((IconName, index) => (
-          <Button key={index.id}>
+          <Button key={index}>
             <Icon fontAwesomeIconName={IconName} />
           </Button>
         ))}
