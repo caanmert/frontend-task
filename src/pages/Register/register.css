@@ -6,21 +6,7 @@
     height: 100vh;
 
 }
-
 .register-form-container{
     padding: 40px;
     background-color: white;
-}
-
-.register-form{    
-    display: flex;
-    flex-direction: column;
-}
-
-.social-icons{
-    display: flex;
-    justify-content: center;
-}
-.inline{
-    display: flex;
 }
