@@ -1,0 +1,48 @@
+
+ .signup-form{
+    position: relative;
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+}
+
+ .upper{
+    height: 20px;
+    background: antiquewhite;
+  
+} 
+.signup-form-fields{
+  margin-left: 10px;
+  margin-right: 10px;
+} 
+
+.form-icon{
+   left: calc(10.3% * 7.5); 
+  position:absolute;
+  top: 7%;
+  width: 7%;
+  transform: translate(10%, -60%);
+  font-size: 70px;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+
+.icon-container{
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    display: flex;
+    margin: 10px;
+    background-color: rgb(216, 216, 216);
+    justify-content: center;
+    align-items: center;
+
+}
+ @media only screen and (min-width: 800px) {
+     .form-field-container:nth-child(-n + 2) {
+     width: 50%;   
+     display: inline-block; 
+     }
+  } 

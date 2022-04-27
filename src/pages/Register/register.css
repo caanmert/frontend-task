@@ -1,12 +1,46 @@
-.container{ 
+.container{
+    display: flex;
+justify-content: center; 
+  align-items: center; 
+    flex-direction: column;
+
+    min-height:100vh;
+    background-color: antiquewhite; 
+}
+
+.register-form-container{
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: antiquewhite;
-    height: 100vh;
+ 
 
+    
+  /*   display: flex;
+    justify-content: center;
+    align-items: center; */
+      
+ /*    display: flex;
+    background-color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh; */
+   
 }
-.register-form-container{
-    padding: 40px;
-    background-color: white;
+
+
+.userList-container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
 }
+
+@media screen and (max-width: 800px){
+.container{ 
+   display: flex;
+   align-items: stretch;
+   justify-content: flex-start;   
+ }
+ .register-form-container{
+    width: 100%;
+    } 
+} 
