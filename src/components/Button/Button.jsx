@@ -4,11 +4,9 @@ import React from 'react';
 import './button.css';
 import PropTypes from 'prop-types';
 
-function Button({
-  style, type, children, onClick,
-}) {
+function Button({ type, children, onClick }) {
   return (
-    <button style={{ ...style }} type={type} className="button" onClick={onClick}>
+    <button type={type} className="button" onClick={onClick}>
       {children}
     </button>
   );
