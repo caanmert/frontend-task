@@ -1,4 +1,4 @@
-const RegisterFormInputs = [
+const registerFormInputs = [
   {
     id: 1,
     name: 'firstname',
@@ -44,4 +44,19 @@ const RegisterFormInputs = [
 
 ];
 
-export default RegisterFormInputs;
+const registerFormIcons = [
+  {
+    id: 1,
+    name: 'fa-brands fa-google',
+  },
+  {
+    id: 2,
+    name: ' fa-brands fa-google-drive',
+  },
+  {
+    id: 3,
+    name: 'fa-solid fa-envelope',
+  },
+];
+
+export { registerFormInputs, registerFormIcons };
