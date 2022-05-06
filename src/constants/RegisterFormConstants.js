@@ -3,7 +3,7 @@ const registerFormInputs = [
     id: 1,
     name: 'firstname',
     type: 'text',
-    icon: 'fa-solid fa-user',
+    iconName: 'fa-solid fa-user',
     placeholder: 'First Name',
     errorMessage:
             "First Name should be 3-16 characters and shouldn't include any special character!",
@@ -14,7 +14,7 @@ const registerFormInputs = [
     id: 2,
     name: 'lastname',
     type: 'text',
-    icon: 'fa-solid fa-user',
+    iconName: 'fa-solid fa-user',
     placeholder: 'Last Name',
     errorMessage:
         "Last Name should be 3-16 characters and shouldn't include any special character!",
@@ -25,7 +25,7 @@ const registerFormInputs = [
     id: 3,
     name: 'email',
     type: 'email',
-    icon: 'fa-solid fa-at',
+    iconName: 'fa-solid fa-at',
     placeholder: 'Email Address',
     errorMessage: 'It should be a valid email address!',
     required: true,
@@ -34,7 +34,7 @@ const registerFormInputs = [
     id: 4,
     name: 'password',
     type: 'password',
-    icon: 'fa-solid fa-key',
+    iconName: 'fa-solid fa-key',
     placeholder: 'Password',
     errorMessage:
         'Password should be 8-20 characters and include at least 1 letter, 1 number and 1 special character!',
@@ -47,15 +47,18 @@ const registerFormInputs = [
 const registerFormIcons = [
   {
     id: 1,
-    name: 'fa-brands fa-google',
+    alt: 'Google Logo',
+    url: 'https://img.icons8.com/color/48/000000/google-logo.png',
   },
   {
     id: 2,
-    name: ' fa-brands fa-google-drive',
+    alt: 'Google Drive',
+    url: 'https://img.icons8.com/color/48/000000/google-drive--v1.png',
   },
   {
     id: 3,
-    name: 'fa-solid fa-envelope',
+    alt: 'Gmail',
+    url: 'https://img.icons8.com/color/48/000000/gmail-new.png',
   },
 ];
 
