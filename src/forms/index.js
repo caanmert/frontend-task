@@ -1,4 +1,4 @@
 /* eslint-disable import/prefer-default-export */
-import SignUpForm from './SignUpForm/SignUpForm';
+import RegisterForm from './RegisterForm/RegisterForm';
 
-export { SignUpForm };
+export { RegisterForm };

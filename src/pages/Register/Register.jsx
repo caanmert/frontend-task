@@ -1,24 +1,26 @@
 /* eslint-disable no-param-reassign */
 import React, { useState } from 'react';
-import { Icon, UserList, FormField } from '../../components';
-import { SignUpForm } from '../../forms';
+import { UserList } from '../../components';
+import { RegisterForm } from '../../forms';
 import './register.css';
 
 function Register() {
   const [users, setUsers] = useState([]);
 
-  const handleSubmit = (values) => {
-    setUsers((currentUsers) => [values, ...currentUsers]);
+  const handleSubmit = (newUser) => {
+    setUsers((currentUsers) => [newUser, ...currentUsers]);
   };
 
   return (
-    <div className="container">
+    <div className="register-page-container">
       <div className="register-form-container">
-        <SignUpForm handleSubmit={handleSubmit} />
+        <RegisterForm handleSubmit={handleSubmit} />
       </div>
-      <div className="userList-container">
-        {users.length > 0 && <UserList users={users} />}
+      {users.length > 0 && (
+      <div className="user-list-container">
+        <UserList users={users} />
       </div>
+      )}
     </div>
   );
 }

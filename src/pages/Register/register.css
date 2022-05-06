@@ -1,46 +1,28 @@
-.container{
+.register-page-container{
     display: flex;
-justify-content: center; 
-  align-items: center; 
+    justify-content: center; 
+    align-items: center; 
     flex-direction: column;
-
     min-height:100vh;
-    background-color: antiquewhite; 
+    background-color: rgb(238, 236, 235); 
 }
 
 .register-form-container{
     display: flex;
     justify-content: center;
- 
-
-    
-  /*   display: flex;
-    justify-content: center;
-    align-items: center; */
-      
- /*    display: flex;
-    background-color: aliceblue;
-    justify-content: center;
-    align-items: center;
-    min-height:100vh; */
-   
 }
-
-
-.userList-container{
-    justify-content: center;
-    align-items: center;
+.user-list-container{
+    display: flex;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
 }
-
 @media screen and (max-width: 800px){
-.container{ 
+ .register-page-container{ 
    display: flex;
+   
    align-items: stretch;
    justify-content: flex-start;   
- }
- .register-form-container{
-    width: 100%;
-    } 
+   flex-grow: 1  fdf;
+ } 
+
 } 
