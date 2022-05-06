@@ -1,17 +1,22 @@
 /* eslint-disable react/jsx-props-no-spreading */
-/* eslint-disable react/prop-types */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './formField.css';
+import PropTypes from 'prop-types';
 
 function FormField(props) {
   const [focused, setFocused] = useState(false);
   const {
-    label, errorMessage, onChange, id, icon, ...inputProps
+    label, errorMessage, onChange, iconName, shouldFieldReset, ...inputProps
   } = props;
 
-  const handleFocus = (e) => {
+  const handleFocus = () => {
     setFocused(true);
   };
+
+  useEffect(() => () => {
+    setFocused(false);
+  }, [shouldFieldReset]);
+
   return (
     <div className="input-field-container">
       <input
@@ -19,12 +24,29 @@ function FormField(props) {
         {...inputProps}
         onChange={onChange}
         onBlur={handleFocus}
-        onFocus={() => setFocused(true)}
+       // onFocus={() => setFocused(true)}
         focused={focused.toString()}
       />
-      <i className={icon} aria-hidden="true" />
+      <i className={iconName} aria-hidden="true" />
+      {/*     <span>{errorMessage}</span> */}
     </div>
   );
 }
+
+FormField.propTypes = {
+  label: PropTypes.string,
+  errorMessage: PropTypes.string,
+  onChange: PropTypes.func,
+  iconName: PropTypes.string,
+  shouldFieldReset: PropTypes.bool,
+};
+
+FormField.defaultProps = {
+  label: 'Input',
+  errorMessage: 'Error Message',
+  onChange: () => {},
+  iconName: 'fa-solid fa-user',
+  shouldFieldReset: false,
+};
 
 export default FormField;
