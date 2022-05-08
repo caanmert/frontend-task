@@ -1,12 +1,9 @@
 import React from 'react';
-import FormField from './components/FormField/FormField';
-import Register from './pages/Register';
+import { Register } from './pages';
 
 function App() {
   return (
-
     <Register />
-
   );
 }
 

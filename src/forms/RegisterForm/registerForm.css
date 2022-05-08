@@ -1,0 +1,69 @@
+.register-form{
+ position: relative;
+ background-color: white;
+ width: 85%;
+ border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+
+.transparent-div{
+ height: 20px;
+ background-color: antiquewhite;
+}
+
+.register-form-fields{
+  margin-left: 20px;
+  margin-right: 20px;
+} 
+
+.top-icon{
+ left: calc(10.3% * 6.3); 
+ position:absolute;
+ top: 3%;
+/*  width: 7%; */
+width: 30%;
+ transform: translate(10%, -60%);
+/*  font-size: 70px; */
+}
+
+.terms-container{
+ margin-top: 10px;
+ margin-bottom: 13px;
+}
+.terms-checkbox{
+
+}
+
+.bottom-icons-container{
+ display: flex;
+ justify-content: center;
+
+}
+
+.bottom-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+  height: 30px;
+  border-radius: 20px;
+  margin: 5px;
+  background-color: rgb(216, 216, 216);
+} 
+
+ @media only screen and (min-width: 800px) {
+     /* First Name and Last Name fields each its own line under 800px  */
+     .form-field-container:nth-child(-n + 2) {
+     width: 50%;   
+     display: inline-block; 
+     }
+
+  } 
+
+  @media only screen and (max-width: 800px) {
+    .register-form{
+      width: 100%;
+      margin-top: 35px;
+    }
+
+ } 
