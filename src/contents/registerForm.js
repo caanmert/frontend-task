@@ -1,4 +1,4 @@
-const registerFormInputs = [
+const inputs = [
   {
     id: 1,
     name: 'firstname',
@@ -41,25 +41,27 @@ const registerFormInputs = [
     pattern: '^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}$',
     required: true,
   },
-
 ];
 
-const registerFormIcons = [
+const icons = [
   {
     id: 1,
     alt: 'Google Logo',
-    url: 'https://img.icons8.com/color/48/000000/google-logo.png',
+    source: 'https://img.icons8.com/color/48/000000/google-logo.png',
+    url: 'https://google.com',
   },
   {
     id: 2,
     alt: 'Google Drive',
-    url: 'https://img.icons8.com/color/48/000000/google-drive--v1.png',
+    source: 'https://img.icons8.com/color/48/000000/google-drive--v1.png',
+    url: 'https://www.google.com/drive/',
   },
   {
     id: 3,
     alt: 'Gmail',
-    url: 'https://img.icons8.com/color/48/000000/gmail-new.png',
+    source: 'https://img.icons8.com/color/48/000000/gmail-new.png',
+    url: 'https://www.google.com/gmail/',
   },
 ];
 
-export { registerFormInputs, registerFormIcons };
+export { inputs, icons };

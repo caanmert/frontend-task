@@ -24,11 +24,9 @@ function FormField(props) {
         {...inputProps}
         onChange={onChange}
         onBlur={handleFocus}
-       // onFocus={() => setFocused(true)}
         focused={focused.toString()}
       />
       <i className={iconName} aria-hidden="true" />
-      {/*     <span>{errorMessage}</span> */}
     </div>
   );
 }
